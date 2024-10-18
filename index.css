@@ -1,0 +1,129 @@
+/* General setup */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+  font-family: 'SerifBodyFont', serif;
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+/* Layout */
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* header and footer */
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* Font-face setup */
+@font-face {
+  font-family: 'SerifBodyFont';
+  src: url('path-to-body-font.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'SansHeadingFont';
+  src: url('path-to-heading-font.woff') format('woff');
+}
+
+/* Heading and Text Styling */
+h1 {
+  font-family: 'SansHeadingFont', sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'SansHeadingFont', sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+}
+
+p {
+  letter-spacing: 0.1em;
+  word-spacing: 0.2em;
+  text-indent: 20px; /* Indent first paragraph */
+}
+
+/* Link Styling */
+a {
+  color: #a66; /* Link color matching header/footer borders */
+  text-decoration: underline;
+}
+
+a:hover, a:focus {
+  text-decoration: none; /* Remove underline on hover/focus */
+}
+
+a:active {
+  background-color: #ddd; /* Active link color */
+}
+
+/* External link icon */
+a[href^="https://"]:after {
+  content: url('image.png'); /* External link icon */
+  padding-left: 5px;
+}
+
+/* List Styling */
+ul, ol {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+ul li {
+  list-style-image: url('custom-bullet.png'); /* Custom bullet */
+}
+
+/* Navigation Styling */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin-bottom: 10px;
+  padding: 15px;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+}
+
+nav ul li a:hover {
+  background-color: #ddd;
+}
