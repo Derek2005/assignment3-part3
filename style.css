@@ -43,12 +43,12 @@ header, footer {
 
 @font-face {
     font-family: 'SerifBody';
-    src: url('path-to-your-font.woff2') format('woff2');
+    src: url('path-to-your-font.woff2') format('woff2'); /* Make sure to replace this with the correct path */
 }
 
 @font-face {
     font-family: 'SansSerifHeading';
-    src: url('path-to-your-font.woff2') format('woff2');
+    src: url('path-to-your-font.woff2') format('woff2'); /* Make sure to replace this with the correct path */
 }
 
 h1, h2, h3, h4, h5 {
@@ -85,14 +85,12 @@ a:active {
 }
 
 a[href^="http"]::after {
-    content: url('external-link-52.png');
+    content: url('external-link-52.png'); /* Make sure the image path is correct */
     margin-left: 5px;
     vertical-align: middle;
     width: 12px; 
     height: 12px; 
     display: inline-block;
-}
-
 }
 
 ul, ol {
