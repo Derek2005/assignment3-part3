@@ -8,7 +8,7 @@ body {
   max-width: 1400px;
   font-family: 'SerifBody', serif;
   font-size: 10px;
-  line-height: 1.5;
+  line-height: 1.6; /* Increased line-height for better readability */
   letter-spacing: 0.02em;
   word-spacing: 0.05em;
 }
@@ -53,7 +53,7 @@ header, footer {
 
 h1, h2, h3, h4, h5 {
     font-family: 'SansSerifHeading', sans-serif;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.05em; /* Slightly increased spacing for better readability */
     text-align: center;
 }
 
@@ -84,19 +84,21 @@ a:active {
     font-weight: bold;
 }
 
+/* Resize and properly align external link icon */
 a[href^="http"]::after {
-    content: url('external-link-52.png'); /* Make sure the image path is correct */
+    content: url('external-link-52.png');
     margin-left: 5px;
     vertical-align: middle;
-    width: 12px; 
-    height: 12px; 
+    width: 12px;
+    height: 12px;
     display: inline-block;
+    transform: scale(0.5); /* Scale down the size of the icon */
 }
 
 ul, ol {
     margin-top: 1rem;
     margin-bottom: 1rem;
-    line-height: 1.5;
+    line-height: 1.6; /* Matching line-height to body text for better flow */
 }
 
 ul li {
@@ -115,7 +117,7 @@ nav ul li {
 
 nav a {
     display: block;
-    padding: 10px;
+    padding: 12px; /* Increased padding for better spacing */
     background-color: #f2f2f2;
     color: #333;
     text-align: center;
@@ -124,4 +126,10 @@ nav a {
 
 nav a:hover {
     background-color: #ddd;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #666;
 }
